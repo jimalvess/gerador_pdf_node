@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<style type="text/css">
+
+	* {
+		margin: 0;
+		padding:0;
+	}
+
+	body, html{
+			font-family: Arial, Tahoma, sans-serif;
+			text-align: center;
+			color: #000;
+			/* O background tem que ser hospedado e não local: */
+			background: url("https://png.pngtree.com/png-clipart/20190611/original/pngtree-certificate-lace-png-image_2165026.jpg") no-repeat;
+			background-size: 100% 100%;
+			background-attachment: fixed;
+			width: 100%; 
+			height: 95%;
+			position: relative; 
+		}
+
+		.principal{
+			vertical-align: middle;
+			margin-top: 10mm;
+			margin-left: 50mm;
+			margin-right: 50mm;
+		}
+
+		.box p{
+			font-size: 12pt;
+			vertical-align: middle;
+			margin-top: 15mm;
+			padding-top: 215px; 
+		}
+
+		.nome{
+			font-family: "Times New Roman", Times, serif;
+			font-style: italic;
+			font-size: 40pt;
+			font-weight: bold;
+			line-height: 1em;
+			margin-top: 3mm;
+			margin-bottom: 3mm;
+		}
+
+		.localidade{
+			margin-top: 20mm;
+			text-align : right;
+		}
+
+		p > span{
+			display: block;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="principal">
+		<div class="box">
+			<p>
+				<span class="nome"><%= nome %></span>
+
+				concluiu com aproveitamento o curso de <b><i><%= curso %></b></i>
+				, de acordo com a Resolução MEC/CNE/CES Nº 01, de 06 de abril de 2018, 
+				promovido pelo Centro Universitário Qualquer Nome de Exemplo, no período de 
+				<b><%= inicio %></b> a <b><%= final %></b>, perfazendo um total de <b><%= horas %> horas</b>, 
+				a fim de que possa gozar de todos os direitos e prerrogativas legais.
+
+				<span class="localidade"><b><%= cidade %>, <%= dia %> de <%= mes %> de <%= ano %>.</b></span>
+			</p>
+		</div>
+	</div>
+</body>
+</html>
